@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://kit.fontawesome.com/53b689e96a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="./assets/logo.png" alt="logo" class='logo'>
+            <ul id="sidemenu">
+                <li><a href="#header">Дома</a></li>
+                <li><a href="#about">За Мене</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#portfolio">Проекти</a></li>
+                <li><a href="#contact">Контакт</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p >Здраво на сите, јас сум</p>
+            <h1><span>Стефан Мустеников</span><br></h1>
+            <p>Студент и софтверски инженер.</p>
+        </div>
+    </div>
+</div>
+<!----------------------------about-------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./assets/img/IMG_0555.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">За Мене</h1>
+                <p>Јас сум Стефан Мустеников, матурант во Гимназијата Добри Даскалов во Кавадарци со голема страст за програмирање, математика и физика.
+                    Од секогаш сум сакал да решавам сложени проблеми и да креирам иновативни решенија.
+                    Имам учествувано на повеќе натпревари по програмирање, каде што го усовршив своето логичко размислување и аналитички пристап за решавање на проблеми. <br>
+                    Во слободно време, уживам во програмирање. Сакам да ги продолжам на Факултетот за електротехника и информатички технологии (ФЕИТ) во Скопје, каде што планирам да ја продлабочам мојата љубов кон технологијата и иновациите.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Вештини</p>
+                    <p class="tab-links" onclick="opentab('experience')">Искуство</p>
+                    <p class="tab-links" onclick="opentab('education')">Едукација</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML, CSS, JavaScript</span><br>За изработка на веб-страни, HTML, CSS и JavaScript се основните технологии што се користат за создавање на структура, визуелна атрактивност и интерактивност</li>
+                        <li><span>C++</span><br>Објектно ориентирано програмирање (OOP) со C++ овозможува структура на кодот да биде организирана преку класи и објекти, што го прави кодот лесен за одржување и проширување</li>
+                        <li><span>Python</span><br>Python е популарен јазик кој нуди едноставност и флексибилност за развој на апликации. Со Python можат да се изработат мобилни и десктоп апликации благодарение на моќните библиотеки и фрејмворкови</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022, 2023, 2024</span><br>Учествував на локални и регионални натпревари по програмирање, решавање алгоритамски задачи и оптимизација. Овие искуства помогнаа за подобрување на вештините за решавање проблеми и длабочина во разбирањето на алгоритмите</li>
+                        <li><span>2023, 2024</span><br>Креирав апликации за автоматизација користејќи Python, со фокус на решавање практични проблеми и олеснување на повторливи задачи. Овие апликации вклучуваат скрипти за обработка на податоци, распоредување задачи и оптимизација на работни процеси</li>
+                        <li><span>2025</span><br>Изработив личен веб-портфолио проект користејќи HTML, CSS и JavaScript. Овој проект ми овозможи да ги покажам своите вештини во веб-дизајн, развој и интерактивни карактеристики, како што се динамична содржина и респонзивни изгледи</li>   
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2014 - 2022</span><br>ООУ „Страшо Пинџур“ Кавадарци</li>
+                        <li><span>2022 - 2025</span><br>СОУ Гимназија „Добри Даскалов“ - Кавадарци</li>
+                        <li><span>2025 - ...</span><br>во тек...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------services-------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Услуги</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Развој на веб страни</h2>
+                <p>Дизајн и изработка на модерни веб страни. <br> <br>
+                   Фонт-енд развој(HTML, CSS, JS), <br> <br>
+                   Бек-енд развој(Node.js, python, ...), <br> <br>
+                   Оптимизирање на веб страни за подобра брзина и перформанси.
+                </p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h2>Софтверски развој</h2>
+                <p>Изработка на мали апликации и алатки, <br> <br>
+                   Решавање на алгоритамски проблеми, <br> <br>
+                   Скрипти за автоматизација во Python.</p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+            <div>
+		 <i class="fa-brands fa-linux"></i>
+                <h2>Линукс и системска оптимизација </h2>
+                <p>Инсталација на конфигурации на линукс дистрибуции (Arch, Ubuntu, Debian, ...) <br> <br>
+                    Скриптирање во Python и Bash, <br> <br>
+                    Решавање проблеми и прилагодување на системпот според потреби.</p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Проекти</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./assets/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Гитхаб Проекти</h3>
+                    <p>C++, C, C#</p>
+                    <a href="https://github.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./assets/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Моодле Проекти</h3>
+                    <p>C++, HTML, CSS, GIMP</p>
+                    <a href="https://dobridaskalov.edu.mk/moodle/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./assets/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Персонални Проекти</h3>
+                    <p>C++, Python, HTML, CSS, JS, ...</p>
+                    <a href="https://github.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Види повеќе</a>
+    </div>
+</div>
+
+<!--------------contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Контатк</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mustenikovstefan@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+389 71 288 203</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Име" required>
+                    <input type="email" name="email" placeholder="E-пошта" required>
+                    <textarea name="message" rows="6" placeholder="Порака"></textarea>
+                    <button type="submit" class="btn btn2">Испрати</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#169; Stefan Mustenikov. All Rights Reserved.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
